@@ -1,0 +1,38 @@
+body{
+    background: rgba(175, 175, 175, 0.4);
+}
+#main-box{
+    background: rgb(175, 175, 175);
+}
+.header{
+    display: flex;    
+    justify-content: space-around;    
+}
+.country{    
+    text-align: center;
+    color:black;
+    padding: 10px;
+    transition: 0.2s;
+}
+.country:hover{
+    cursor: pointer;
+    background: gray;
+    color: white;
+}
+.title{
+    color:white;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    padding: 10px;
+    text-indent: 10px;
+    margin: 0;
+}
+.hoverEffect{
+    box-sizing: border-box;
+}
+.hoverEffect:hover{    
+    border: 2px solid gray;    
+}
+
