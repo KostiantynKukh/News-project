@@ -28,7 +28,7 @@ class APIService {
     for(var i=0;i<mainCols.length;i++){               
         for(var j=0;j<articles.length;j++){                                
             var div = document.createElement("div");
-            var h3 = document.createElement("h4");
+            var h3 = document.createElement("h5");
             var img = document.createElement("img");
             var a = document.createElement("a");
             a.setAttribute("href", articles[j].url);
@@ -40,7 +40,8 @@ class APIService {
             }
             else{            
             img.src = articles[j].urlToImage;
-            img.style.width = "100%";} 
+            img.style.width = "100%";
+            } 
             h3.classList.add("title");
             h3.innerHTML = articles[j].title;
             a.prepend(img);          
