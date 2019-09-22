@@ -85,6 +85,3 @@ function Active(elem){
 burger.onclick = function (){
   header.classList.toggle("activeBurger");
 }
-    
-
- 
