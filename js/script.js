@@ -65,17 +65,25 @@ let api = new APIService();
 }
 
  var countries = document.getElementsByClassName("country");
+ var header =  document.getElementById("header");
+ var burger = document.getElementById("burger");
   for(i=0;i<countries.length;i++){  
     countries[i].onclick = function(){      
         StartApi(this.id);
         Active(this);              
       }
-}
-function Active(elem){
-  for(i=0;i<countries.length;i++){
-   countries[i].classList.remove("active");
   }
-  elem.classList.add("active");  
+
+function Active(elem){
+    for(i=0;i<countries.length;i++){
+      countries[i].classList.remove("active");
+    }
+    elem.classList.add("active");
+    header.classList.toggle("activeBurger");  
+}
+
+burger.onclick = function (){
+  header.classList.toggle("activeBurger");
 }
     
 
