@@ -68,8 +68,15 @@ let api = new APIService();
   for(i=0;i<countries.length;i++){  
     countries[i].onclick = function(){      
         StartApi(this.id);
+        Active(this);              
       }
+}
+function Active(elem){
+  for(i=0;i<countries.length;i++){
+   countries[i].classList.remove("active");
   }
+  elem.classList.add("active");  
+}
     
 
  

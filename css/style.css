@@ -11,19 +11,20 @@ body{
 }
 .header{
     display: flex;    
-    justify-content: space-around;    
+    justify-content: space-around;
 }
 .country{    
     text-align: center;
-    font-size: 2rem;
-    color:black;
-    padding: 10px;
+    font-size: 3rem;
+    font-weight: 800;
+    color:white;
+    padding: 15px 10px;
     transition: 0.2s;
+    letter-spacing: 10px;
 }
 .country:hover{
-    cursor: pointer;
-    background: gray;
-    color: white;
+    cursor: pointer;   
+    color:rgb(30, 253, 0);
 }
 .title{
     color:white;
@@ -44,10 +45,30 @@ body{
 .hoverEffect:hover{    
     border: 2px solid gray;    
 }
+#ua{
+    background: url(../img/ukraine.png) 50% no-repeat;
+    background-size: 70% 100%; 
+}
+#gb{
+    background: url(../img/UG.png) 50% no-repeat;
+    background-size: 70% 100%; 
+}
+#us{
+    background: url(../img/usa.png) 50% no-repeat;
+    background-size: 70% 100%;
+}
+#de{
+    background: url(../img/germany.png) 50% no-repeat;
+    background-size: 75% 100%;
+}
+.active{
+    color: rgb(0, 255, 234);
+}
+
 @media (max-width:767px){
     .title{
         font-size: 2rem;
-        line-height: 1.5rem;
+        line-height: 2rem;
     } 
 }
 
